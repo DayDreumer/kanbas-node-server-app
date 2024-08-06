@@ -48,10 +48,6 @@ export default function UserRoutes(app) {
   const signin = async (req, res) => {
     try {
       const { username, password } = req.body;
-
-      console.log('Received signin request');
-      console.log('Username:', username);
-      console.log('Password:', password);
   
       if (!username || !password) {
         return res.status(400).json({ message: "Username and password are required." });
