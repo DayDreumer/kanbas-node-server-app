@@ -600,16 +600,7 @@ export default [
       {"_id": "L1006", "name": "Servant Leadership", "description": "Exploration of servant leadership as practiced by Jesus and its relevance today."}
     ]
   },
-  {
-    "_id": "M903",
-    "name": "Models of Christian Leadership",
-    "description": "This module explores different leadership styles within the Christian context and their historical impacts.",
-    "course": "RS115",
-    "lessons": [
-      {"_id": "L1005", "name": "The Role of Bishops", "description": "Evolution of the episcopal office and its significance in church governance."},
-      {"_id": "L1006", "name": "Servant Leadership", "description": "Exploration of servant leadership as practiced by Jesus and its relevance today."}
-    ]
-  },
+  
   {
     "_id": "M904",
     "name": "Fundamentals of Sufism",
@@ -618,26 +609,6 @@ export default [
     "lessons": [
       {"_id": "L1007", "name": "Key Sufi Figures", "description": "Life and teachings of major Sufi saints like Rumi and Hafiz."},
       {"_id": "L1008", "name": "Sufi Practices and Rituals", "description": "Insight into daily practices and rituals that define Sufi life."}
-    ]
-  },
-  {
-    "_id": "M904",
-    "name": "Fundamentals of Sufism",
-    "description": "An introduction to the mystical aspects of Sufism, its beliefs, practices, and major figures.",
-    "course": "RS116",
-    "lessons": [
-      {"_id": "L1007", "name": "Key Sufi Figures", "description": "Life and teachings of major Sufi saints like Rumi and Hafiz."},
-      {"_id": "L1008", "name": "Sufi Practices and Rituals", "description": "Insight into daily practices and rituals that define Sufi life."}
-    ]
-  },
-  {
-    "_id": "M905",
-    "name": "Islamic Ethics and Morality",
-    "description": "Exploration of ethical principles derived from the Quran and Hadith and their applications in modern contexts.",
-    "course": "RS117",
-    "lessons": [
-      {"_id": "L1009", "name": "Ethics of the Prophet", "description": "A study on the moral and ethical teachings of Prophet Muhammad."},
-      {"_id": "L1010", "name": "Contemporary Islamic Ethics", "description": "Discussion on how Islamic ethical principles are applied in the contemporary world."}
     ]
   },
   {

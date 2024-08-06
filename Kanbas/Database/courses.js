@@ -8,7 +8,8 @@ export default [
     "department": "D123",
     "credits": 4,
     "description": "This course provides an in-depth study of the fundamentals of rocket propulsion, covering topics such as propulsion theory, engine types, fuel chemistry, and the practical applications of rocket technology. Designed for students with a strong background in physics and engineering, the course includes both theoretical instruction and hands-on laboratory work",
-    "imageUrl": "/images/course1.png"
+    "imageUrl": "/images/course1.png",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS102",
@@ -19,7 +20,8 @@ export default [
     "department": "D123",
     "credits": 3,
     "description": "This course offers a comprehensive exploration of aerodynamics, focusing on the principles and applications of airflow and its effects on flying objects. Topics include fluid dynamics, airfoil design, lift and drag forces, and the aerodynamic considerations in aircraft design. The course blends theoretical learning with practical applications, suitable for students pursuing a career in aeronautics or astronautics engineering.",
-    "imageUrl": "/images/course2.jpg"
+    "imageUrl": "/images/course2.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS103",
@@ -30,8 +32,9 @@ export default [
     "department": "D123",
     "credits": 4,
     "description": "This course delves into the principles and practices of spacecraft design, offering students a detailed understanding of the engineering and technology behind spacecraft systems. Key topics include spacecraft structure, propulsion, power systems, thermal control, and payload integration. Emphasizing both theoretical concepts and practical skills, the course prepares students for careers in the space industry, with a focus on innovative design and problem-solving in the context of current and future space missions",
-    "imageUrl": "/images/course3.png"
-},
+    "imageUrl": "/images/course3.png",
+    "author": "654f9ec2ea7ead465908d1e3"
+  },
   {
     "_id": "RS104",
     "name": "Organic Chemistry",
@@ -41,7 +44,8 @@ export default [
     "department": "D134",
     "credits": 3,
     "description": "Organic Chemistry is an in-depth course that explores the structure, properties, composition, and reactions of organic compounds and materials. The course covers various topics including hydrocarbons, functional groups, stereochemistry, and organic synthesis techniques. Students will learn about the mechanisms of organic reactions, spectroscopic methods for structure determination, and the role of organic chemistry in biological systems. Emphasis is placed on problem-solving and laboratory skills, preparing students for advanced studies in chemistry, medicine, and related fields.",
-    "imageUrl": "/images/course4.jpg"
+    "imageUrl": "/images/course4.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS105",
@@ -52,7 +56,8 @@ export default [
     "department": "D134",
     "credits": 3,
     "description": "Inorganic Chemistry focuses on the properties, structures, and behaviors of inorganic and organometallic compounds. This course covers a range of topics including coordination chemistry, metal complexes, bonding theories, symmetry, and crystal field theory. Students will also explore the role of inorganic chemistry in real-world applications such as catalysis, materials science, and bioinorganic processes. Laboratory work emphasizes synthesis and analysis of inorganic compounds, fostering a deeper understanding of theoretical concepts.",
-    "imageUrl": "/images/course5.jpg"
+    "imageUrl": "/images/course5.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS106",
@@ -63,7 +68,8 @@ export default [
     "department": "D134",
     "credits": 3,
     "description": "Physical Chemistry merges the principles of physics and chemistry to understand the physical properties of molecules, the forces that act upon them, and the chemical reactions they undergo. Key topics include thermodynamics, kinetics, quantum mechanics, and spectroscopy. The course provides a comprehensive understanding of molecular behavior, reaction dynamics, and the application of mathematical methods in solving chemical problems. Labs focus on experimental techniques and data analysis, equipping students with skills necessary for research and advanced study in chemistry and related fields.",
-    "imageUrl": "/images/course6.jpg"
+    "imageUrl": "/images/course6.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS107",
@@ -110,7 +116,8 @@ export default [
     "department": "Education",
     "credits": 3,
     "description": "This course examines the foundations of democratic education, emphasizing the role of education in fostering civic responsibility, critical thinking, and social equality. It explores historical and contemporary models of democratic schooling, the importance of participatory learning, and the development of educational systems that reflect democratic values. Students will engage in discussions on the challenges and opportunities of implementing democratic principles in diverse educational settings.",
-    "imageUrl": "/images/course3.png"
+    "imageUrl": "/images/course3.png",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS111",
@@ -121,7 +128,8 @@ export default [
     "department": "History",
     "credits": 4,
     "description": "This course provides an in-depth analysis of the philosophical underpinnings of independence and liberation movements, with a focus on Latin American history. It covers the ideologies that fueled the fight for independence, the impact of Enlightenment thought, and the contributions of key figures like Simón Bolívar. The course encourages students to critically examine the concepts of freedom, autonomy, and nation-building in the context of historical and contemporary struggles for liberation.",
-    "imageUrl": "/images/course4.jpg"
+    "imageUrl": "/images/course4.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS112",
@@ -132,8 +140,8 @@ export default [
     "department": "Education",
     "credits": 3,
     "description": "Focusing on the early 19th century, this course explores innovative educational practices and theories of the time. It highlights the work of leading educational reformers, including Simon Rodríguez, and their contributions to modern pedagogy. Students will study the evolution of educational methods, the integration of practical and theoretical knowledge, and the role of education in social change. The course includes a critical assessment of the lasting impacts of these early innovations on contemporary education systems.",
-    "imageUrl": "/images/course5.jpg"
-
+    "imageUrl": "/images/course5.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS113",
@@ -216,7 +224,8 @@ export default [
     "department": "Environmental Studies",
     "credits": 3,
     "description": "This course explores the principles and practices of environmental management in ancient China, with a focus on the legendary achievements of Yu the Great in flood control and irrigation. Students will examine ancient Chinese approaches to water management, agriculture, and land use, and their relevance to modern environmental challenges. The course also delves into the integration of these practices with traditional Chinese philosophies and governance.",
-    "imageUrl": "/images/course5.jpg"
+    "imageUrl": "/images/course5.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS120",
@@ -227,7 +236,8 @@ export default [
     "department": "Management Studies",
     "credits": 4,
     "description": "Drawing on stories from Chinese mythology and history, this course examines the qualities and actions of effective leaders, using Yu the Great as a central figure. Students will explore themes of perseverance, vision, and ethical governance as demonstrated in Yu's legendary endeavors. The course also covers leadership lessons from other notable figures in Chinese mythology and their impact on the formation of Chinese cultural and political identity.",
-    "imageUrl": "/images/course6.jpg"
+    "imageUrl": "/images/course6.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   },
   {
     "_id": "RS121",
@@ -238,6 +248,7 @@ export default [
     "department": "Engineering",
     "credits": 4,
     "description": "This engineering course offers an in-depth study of hydraulic projects in ancient civilizations, with a special focus on Yu the Great's flood control systems. Covering the design, construction, and impact of ancient dams, canals, and irrigation systems, the course provides insights into early engineering marvels. Comparative studies of hydraulic engineering in other ancient civilizations, such as Mesopotamia and the Indus Valley, are also included to provide a broader historical and technological context.",
-    "imageUrl": "/images/course7.jpg"
+    "imageUrl": "/images/course7.jpg",
+    "author": "654f9ec2ea7ead465908d1e3"
   }
-]
+];

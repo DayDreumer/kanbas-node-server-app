@@ -31,9 +31,9 @@ export default function UserRoutes(app) {
     const {userId} = req.params;
     const status = await dao.updateUser(userId, req.body);
     res.json(status);
-  };
+   };
 
-  const signup = async (req, res) => { 
+   const signup = async (req, res) => { 
     const user = await dao.findUserByUsername(req.body.username);
     if (user) {
       res.status(400).json(
@@ -45,39 +45,24 @@ export default function UserRoutes(app) {
     res.json(currentUser);
   };
 
-  const signin = async (req, res) => {
-    try {
-      const { username, password } = req.body;
-  
-      if (!username || !password) {
-        return res.status(400).json({ message: "Username and password are required." });
-      }
-  
-      const currentUser = await dao.findUserByCredentials(username, password);
-  
-      if (currentUser) {
-        req.session.currentUser = currentUser;
-        res.json(currentUser);
-      } else {
-        res.status(401).json({ message: "Invalid username or password." });
-      }
-    } catch (error) {
-      console.error("Error during signin:", {
-        message: error.message,
-        stack: error.stack,
-        username,
-      });
-  
-      if (error.message.includes('ECONNREFUSED') || error.message.includes('ENOTFOUND')) {
-        res.status(503).json({ message: "Service unavailable. Please try again later." });
-      } else if (error.message.includes('query')) {
-        res.status(500).json({ message: "Database query error. Please contact support." });
-      } else {
-        res.status(500).json({ message: "Internal server error. Please try again later." });
-      }
+  const signin = async (req, res) => { 
+    const {username, password} = req.body;
+    const currentUser = await dao.findUserByCredentials(username, password);
+    if (!currentUser) {
+      return res.status(400).send({ error: "User does not exist!" });
+    } else if (currentUser.password != password) {
+      return res.status(400).send({ error: "Password is not correct!" });
     }
+
+    // if(currentUser){
+    //   req.session["currentUser"] = currentUser;
+    //   res.json(currentUser);
+    // }else{
+    //   res.status(401).json({message: "Unable to login. Try again later."});
+    // }
+    req.session["currentUser"] = currentUser;
+    res.json(currentUser);
   };
-  
 
   const signout = (req, res) => { 
     req.session.destroy();
@@ -86,6 +71,7 @@ export default function UserRoutes(app) {
 
   const profile = (req, res) => {
     const currentUser = req.session["currentUser"];
+    console.log(process.env.NODE_SERVER_DOMAIN);
     if (!currentUser) {
       res.sendStatus(401);
       return;

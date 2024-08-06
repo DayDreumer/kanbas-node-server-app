@@ -20,10 +20,11 @@ app.use(
   })
 );
 const sessionOptions = {
-  secret: "any string",
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
 };
+
 if (process.env.NODE_ENV !== "development") {
   sessionOptions.proxy = true;
   sessionOptions.cookie = {
@@ -35,6 +36,13 @@ if (process.env.NODE_ENV !== "development") {
 app.use(
   session(sessionOptions)
 );
+
+app.use((req, res, next) => {
+  if (process.env.NODE_ENV !== "development" && req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect('https://' + req.headers.host + req.url);
+  }
+  next();
+});
 
 app.use(express.json());
 UserRoutes(app);
